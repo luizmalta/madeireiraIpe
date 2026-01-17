@@ -356,40 +356,71 @@ a {
 .brands-section {
     padding: 80px 0;
     background: var(--white);
+    overflow: hidden;
 }
 
-.brands-slider {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 40px;
+.brands-slider-wrapper {
     margin-top: 50px;
+    overflow: hidden;
+    position: relative;
 }
 
-.brand-item {
+.brands-slider-track {
     display: flex;
+    gap: 60px;
+    animation: scroll 30s linear infinite;
+}
+
+.brands-slider-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.brand-slide {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    border: 1px solid var(--border-color);
+    padding: 30px 20px;
+    background: var(--light-color);
     border-radius: 10px;
     transition: all 0.3s;
-    background: var(--white);
+    border: 2px solid transparent;
 }
 
-.brand-item:hover {
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+.brand-slide:hover {
+    border-color: var(--primary-color);
     transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
-.brand-item img {
-    max-width: 100%;
+.brand-slide img {
+    max-width: 150px;
     height: auto;
-    opacity: 0.7;
+    opacity: 0.8;
     transition: opacity 0.3s;
+    margin-bottom: 15px;
 }
 
-.brand-item:hover img {
+.brand-slide:hover img {
     opacity: 1;
+}
+
+.brand-slide p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--dark-color);
+    text-align: center;
+    margin: 0;
 }
 
 /* LOCATIONS SECTION */
@@ -725,9 +756,13 @@ a {
         font-size: 28px;
     }
 
-    .brands-slider {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .brand-slide {
+        min-width: 150px;
+        padding: 20px 15px;
+    }
+
+    .brand-slide img {
+        max-width: 120px;
     }
 
     .locations-grid,
