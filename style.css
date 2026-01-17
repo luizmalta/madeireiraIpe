@@ -429,6 +429,73 @@ a {
     background: var(--light-color);
 }
 
+.location-info-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.location-info-text h3 {
+    font-size: 28px;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.location-info-text p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.location-images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.location-image-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.location-image-card:hover {
+    transform: translateY(-10px);
+}
+
+.location-image-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(44, 44, 44, 0.8);
+    color: var(--white);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.location-image-card:hover .image-overlay {
+    background: rgba(184, 147, 94, 0.9);
+}
+
+.image-overlay i {
+    font-size: 24px;
+}
+
 .locations-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -745,6 +812,15 @@ a {
     .products-columns {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+
+    .location-images-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .location-image-card img {
+        height: 300px;
     }
 }
 
