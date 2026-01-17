@@ -694,7 +694,8 @@ a {
 /* RESPONSIVE */
 @media (max-width: 968px) {
     .main-header {
-        position: relative;
+        position: static;
+        z-index: auto;
     }
 
     .mobile-menu-toggle {
