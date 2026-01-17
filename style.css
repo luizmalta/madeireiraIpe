@@ -119,6 +119,7 @@ a {
     height: 450px;
     overflow: hidden;
     background: #ffffff;
+    z-index: 1;
 }
 
 .slider-container {
