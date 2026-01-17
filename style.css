@@ -566,6 +566,12 @@ a {
     font-size: 14px;
 }
 
+.developer-credit {
+    margin-top: 10px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
 /* WHATSAPP FLOAT BUTTON */
 .whatsapp-float {
     position: fixed;
