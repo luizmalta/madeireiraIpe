@@ -706,6 +706,7 @@ a {
         padding: 20px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         display: none;
+        z-index: 999;
     }
 
     .nav-menu.active {
