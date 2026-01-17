@@ -693,6 +693,10 @@ a {
 
 /* RESPONSIVE */
 @media (max-width: 968px) {
+    .main-header {
+        position: relative;
+    }
+
     .mobile-menu-toggle {
         display: block;
     }
