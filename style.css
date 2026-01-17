@@ -734,7 +734,7 @@ a {
     }
 
     .hero-slider {
-        height: 300px;
+        height: 400px;
     }
 
     .products-columns {
@@ -753,7 +753,11 @@ a {
     }
 
     .slide-content h1 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
     }
 
     .brand-slide {
@@ -771,7 +775,22 @@ a {
     }
 
     .hero-slider {
-        height: 400px;
+        height: 300px;
+    }
+
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .slider-indicators {
+        bottom: 10px;
+    }
+
+    .indicator {
+        width: 8px;
+        height: 8px;
     }
 
     .whatsapp-float {
