@@ -459,6 +459,7 @@ a {
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
     transition: transform 0.3s;
+    height: 200px;
 }
 
 .location-image-card:hover {
@@ -511,6 +512,10 @@ a {
     text-align: center;
     box-shadow: 0 3px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
 }
 
 .location-card:hover {
