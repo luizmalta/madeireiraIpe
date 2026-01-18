@@ -431,7 +431,7 @@ a {
 
 .location-main-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin: 50px 0;
     align-items: start;
@@ -451,12 +451,6 @@ a {
 .location-info-text p {
     font-size: 18px;
     color: var(--text-color);
-}
-
-.location-images-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
 }
 
 .location-image-card {
@@ -824,11 +818,6 @@ a {
     .location-main-grid {
         grid-template-columns: 1fr;
         gap: 30px;
-    }
-
-    .location-images-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .location-image-card img {
