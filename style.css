@@ -22,6 +22,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     overflow-x: hidden;
+    padding-top: 182px;
 }
 
 .container {
@@ -39,6 +40,11 @@ a {
 .top-bar {
     background: linear-gradient(135deg, #f7e2bc, #d4b589);
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
 }
 
 .top-bar-content {
@@ -67,7 +73,10 @@ a {
     background: var(--white);
     padding: 20px 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: relative;
+    position: fixed;
+    top: 42px;
+    left: 0;
+    right: 0;
     z-index: 1000;
 }
 
@@ -78,7 +87,7 @@ a {
 }
 
 .logo img {
-    height: 80px;
+    height: 90px;
     width: auto;
 }
 
@@ -91,7 +100,7 @@ a {
 .main-nav a {
     color: var(--dark-color);
     font-weight: 600;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: color 0.3s;
@@ -368,7 +377,7 @@ a {
 .brands-slider-track {
     display: flex;
     gap: 60px;
-    animation: scroll 30s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 .brands-slider-track:hover {
@@ -459,7 +468,7 @@ a {
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0,0,0,0.15);
     transition: transform 0.3s;
-    height: 350px;
+    height: 300px;
 }
 
 .location-image-card:hover {
